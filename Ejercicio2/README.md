@@ -406,6 +406,7 @@ figuras_geometricas.main()
 ![image-5.png](media/image-5.png)
 
 **Esfera**
+
 ![image-3.png](media/image-3.png)
 
 **Pirámide**
