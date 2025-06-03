@@ -1,0 +1,17 @@
+classDiagram
+    class Notas {
+        listado_notas: list[float]
+        «constructor»Notas()
+        calcular_promedio() float
+        calcular_desviacion_estandar() float
+        mayor() float
+        menor() float
+    }
+    class VentanaPrincipal {
+        root: Tk
+        notas: Notas
+        «constructor»VentanaPrincipal()
+        crear_widgets()
+        calcular_notas()
+    }
+    VentanaPrincipal --> Notas
