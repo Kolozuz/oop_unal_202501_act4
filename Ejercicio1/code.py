@@ -1,54 +1,3 @@
-## Ejercicio 8.2 (p.480)
-
-### Enunciado
-
-Se requiere desarrollar un programa con interfaz gráfica de usuario que
-genere una ventana donde se solicite el ingreso de cinco notas obtenidas
-por un estudiante.
-El programa debe calcular y mostrar en la parte inferior de la ventana
-los siguientes datos:
-- El promedio de notas ingresadas.
-- La desviación estándar de las notas ingresadas.
-- La mayor nota obtenida.
-- La menor nota obtenida.
-
-##### Formula para el calculo de la desviación estándar 
-
-$$ \sigma = \sqrt{\sum(x_i-\mu)^2 \over N} $$
-
-- $\sigma$ = desviación estándar
-- $N$ = tamaño de la lista
-- $x_i$ = cada valor de la lista
-- $\mu$ = media de los valores de la lista
-
-### Diagrama de Clases
-
-```mermaid
-classDiagram
-    class Notas {
-        listado_notas: list[float]
-        «constructor»Notas()
-        calcular_promedio() float
-        calcular_desviacion_estandar() float
-        mayor() float
-        menor() float
-    }
-    class VentanaPrincipal {
-        root: Tk
-        notas: Notas
-        «constructor»VentanaPrincipal()
-        crear_widgets()
-        calcular_notas()
-    }
-    VentanaPrincipal --> Notas
-```
-
-### Solución
-
-#### Definición de clases
-
-
-```python
 import math
 from tkinter import *
 from tkinter import ttk
@@ -144,21 +93,8 @@ class VentanaPrincipal:
         )
         self.result_label.config(text=resultado_texto)
         self.notas = Notas()
-```
 
-#### Ejecución del programa
-
-
-```python
-# Se crea una instancia de la ventana principal y se inicia el bucle de eventos
-my_calculator = VentanaPrincipal()
-my_calculator.root.mainloop()
-```
-
-**Botón Calcular**
-
-![image.png](media/image.png)
-
-**Botón Limpiar**
-
-![image-2.png](media/image-2.png)
+if __name__ == "__main__":
+    # Se crea una instancia de la ventana principal y se inicia el bucle de eventos
+    my_calculator = VentanaPrincipal()
+    my_calculator.root.mainloop()
