@@ -21,6 +21,10 @@ $$ \sigma = \sqrt{\sum(x_i-\mu)^2 \over N} $$
 - $x_i$ = cada valor de la lista
 - $\mu$ = media de los valores de la lista
 
+### Diagrama de Casos de uso
+
+![ejeruso1 drawio](https://github.com/user-attachments/assets/160d5c4f-7e00-49e5-8460-2b10f699cbd9)
+
 ### Diagrama de Clases
 
 ```mermaid
