@@ -17,6 +17,10 @@ jerarquía de clases para las diferentes figuras geométricas requeridas.
 
 TODO
 
+### Diagrama de Casos de uso
+
+![claseuso2](https://github.com/user-attachments/assets/a892068e-a91d-4662-9bc6-a85bc1f888dd)
+
 ### Diagrama de Clases
 
 ```mermaid
