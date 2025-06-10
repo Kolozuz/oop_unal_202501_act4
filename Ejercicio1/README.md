@@ -23,7 +23,9 @@ $$ \sigma = \sqrt{\sum(x_i-\mu)^2 \over N} $$
 
 ### Diagrama de Casos de uso
 
-![ejeruso1 drawio](https://github.com/user-attachments/assets/160d5c4f-7e00-49e5-8460-2b10f699cbd9)
+![ejeruso1 drawio](https://github.com/user-attachments/assets/e729d711-f7eb-4fa4-8c5c-949ac111a9e9)
+
+
 
 ### Diagrama de Clases
 
